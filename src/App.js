@@ -106,7 +106,7 @@ sortPopularity()
     return (
 <div>
     <div className="jumbotron">
-      <div className="App">
+
           <div className="logo">
           <p>MusicBay - Zikher &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  One Stop Destination for Music Tracks</p>
           </div>
@@ -115,16 +115,17 @@ sortPopularity()
           <div className="login">
           <a href="http://desolate-shelf-95963.herokuapp.com/">  <button className="login_Button"><span className="login_text">Log In to Spotify</span></button> </a>
           </div>
-      </div>
+
     </div>
 <div className="mainBody">
 
         <div className='trackRow'>
-
+          <div className="col-sm-10">
               <div className="search">
-                <input  className="inputSearch" type="text" placeholder="Search Artist or a Track" onChange={this.handleChange} style={{color: 'white',fontWeight: 600, borderRadius: 3, border: 'none'}}/>
-                <button className="buttonSearch" onClick={ () => this.getTracks(this.state.artist)}><p style={{color: 'white', fontWeight: 600,backgroundColor: '#DA2647',fontSize: 15}}>GO</p></button>
+                <input  className="inputSearch col-sm-10" type="text" placeholder="Search Artist or a Track" onChange={this.handleChange} style={{color: 'white',fontWeight: 600, borderRadius: 3, border: 'none'}}/>
+                <button className="buttonSearch col-sm-2" onClick={ () => this.getTracks(this.state.artist)}><p style={{color: 'white', fontWeight: 600,backgroundColor: '#DA2647',fontSize: 15}}>GO</p></button>
               </div>
+          </div>
 
               <div className="sort">
                 <div className="popularity">
