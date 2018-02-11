@@ -126,11 +126,11 @@ sortPopularity()
               </div>
         </div>
 
-              <div className="sort">
-                <div className="popularity">
+              <div className="col-sm-12">
+                <div className="col-sm-6">
                   <button style={{height:30, fontSize: 14, fontWeight: 600, backgroundColor: '#4F86F7', width: '100%'}} onClick={() => this.sortPopularity()}>Sort By Popularity</button>
                 </div>
-                <div className="duration">
+                <div className="col-sm-6">
                   <button style={{height:30, fontSize: 14, fontWeight: 600, backgroundColor: '#4F86F7', width: '100%'}} onClick={() => this.sortDuration()}>Sort By Duration</button>
                 </div>
               </div>
