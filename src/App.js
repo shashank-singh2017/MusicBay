@@ -138,7 +138,7 @@ sortPopularity()
                 <br/>
                 {this.state.tracks.map((track) => {
                   return (
-                    <div className="results">
+                    <div className="col-sm-10">
                         <div className="image">
                           <img src={track.album.images[2].url} />
                         </div>
