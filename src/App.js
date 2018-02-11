@@ -107,14 +107,14 @@ sortPopularity()
 <div>
     <div className="jumbotron">
 
-          <div className="logo">
+          <span className="logo">
           <p>MusicBay - Zikher &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  One Stop Destination for Music Tracks</p>
-          </div>
+          </span>
 
 
-          <div className="login">
-          <a href="http://desolate-shelf-95963.herokuapp.com/">  <button className="login_Button"><span className="login_text">Log In to Spotify</span></button> </a>
-          </div>
+          <span className="login" style={{float: 'right', marginRight: 20}}>
+          <a href="http://desolate-shelf-95963.herokuapp.com/"> <button type="button" className="btn btn-success">Log In to Spotify</button> </a>
+          </span>
 
     </div>
 <div className="mainBody">
