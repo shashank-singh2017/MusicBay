@@ -105,25 +105,24 @@ sortPopularity()
   render() {
     return (
 <div>
-    <div className="jumbotron">
+    <div className="col-sm-12">
 
-          <span className="logo">
+          <span className="col-sm-8">
           <p>MusicBay - Zikher &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  One Stop Destination for Music Tracks</p>
           </span>
 
 
-          <span className="login" style={{float: 'right', marginRight: 20}}>
+          <span className="col-sm-4" style={{float: 'right', marginRight: 20}}>
           <a href="http://desolate-shelf-95963.herokuapp.com/"> <button type="button" className="btn btn-success">Log In to Spotify</button> </a>
           </span>
 
     </div>
 <div className="mainBody">
 
-        <div className='col-sm-12'>
-              <div className="search">
+        <div className='col-sm-12' style={{height: 50}}>
                 <input  className="inputSearch col-sm-10" type="text" placeholder="Search Artist or a Track" onChange={this.handleChange} style={{color: 'white',fontWeight: 600, borderRadius: 3, border: 'none'}}/>
                 <button className="buttonSearch col-sm-2" onClick={ () => this.getTracks(this.state.artist)}><p style={{color: 'white', fontWeight: 600,backgroundColor: '#DA2647',fontSize: 15}}>GO</p></button>
-              </div>
+
         </div>
 
               <div className="col-sm-12">
@@ -139,17 +138,17 @@ sortPopularity()
                 {this.state.tracks.map((track) => {
                   return (
                     <div className="col-sm-10">
-                        <div className="image">
+                        <div className="image col-sm-2">
                           <img src={track.album.images[2].url} />
                         </div>
                         <div className="trackDesc">
-                          <div className="desc1">
+                          <div className="col-sm-5">
                             <span>Title: {track.name}</span><br/>
                             <span> Type: {track.album.album_type}</span><br/>
                             <span> Duration: {Math.floor(track.duration_ms/60000)}:{Math.floor((track.duration_ms/1000)%60)} </span>
                           </div>
 
-                          <div className="desc2">
+                          <div className="col-sm-5">
                             <span>Popularity: {track.popularity}</span><br/>
                             <span> Artists: </span><br/>
                             <a href={track.external_urls.spotify}><button style={{height: 25}}>Open in Spotify</button></a>
