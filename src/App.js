@@ -112,7 +112,7 @@ sortPopularity()
 
 
           <div className="login">
-          <a href="https://authoriztioncode.herokuapp.com/callback">  <button className="login_Button"><span className="login_text">Log In to Spotify</span></button> </a>
+          <a href="https://authoriztioncode.herokuapp.com/">  <button className="login_Button"><span className="login_text">Log In to Spotify</span></button> </a>
           </div>
 
 
