@@ -196,5 +196,9 @@ body
   background-color: #4F86F7;
   width: 49%;
   height: 30px;
+}
 
+.jumbotron
+{
+  height: 110px;
 }

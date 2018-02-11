@@ -105,7 +105,7 @@ sortPopularity()
   render() {
     return (
 <div>
-    <div class="jumbotron">
+    <div className="jumbotron">
       <div className="App">
           <div className="logo">
           <p>MusicBay - Zikher &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  One Stop Destination for Music Tracks</p>
