@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import Spotify from 'spotify-web-api-js';
 
+import Button from 'react-bootstrap';
+
 const spotifyApi = new Spotify();
 
 const sortBy = require('sort-array');
