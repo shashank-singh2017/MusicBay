@@ -119,8 +119,7 @@ sortPopularity()
     </div>
 <div className="mainBody">
 
-        <div className='trackRow'>
-          <div className="col-sm-10">
+        <div className='col-sm-12'>
               <div className="search">
                 <input  className="inputSearch col-sm-10" type="text" placeholder="Search Artist or a Track" onChange={this.handleChange} style={{color: 'white',fontWeight: 600, borderRadius: 3, border: 'none'}}/>
                 <button className="buttonSearch col-sm-2" onClick={ () => this.getTracks(this.state.artist)}><p style={{color: 'white', fontWeight: 600,backgroundColor: '#DA2647',fontSize: 15}}>GO</p></button>
