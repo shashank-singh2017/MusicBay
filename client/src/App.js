@@ -107,16 +107,13 @@ sortPopularity()
 <div>
       <div className="App">
           <div className="logo">
-          <p>MusicBay - Zikher </p>
+          <p>MusicBay - Zikher &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  One Stop Destination for Music Tracks</p>
           </div>
 
 
           <div className="login">
           <a href="http://localhost:8888/">  <button className="login_Button"><span className="login_text">Log In to Spotify</span></button> </a>
           </div>
-
-          <br/>
-          <p>Artist you are searching : {this.state.artist}</p>
 
 
       </div>
@@ -125,16 +122,16 @@ sortPopularity()
         <div className='trackRow'>
 
               <div className="search">
-                <input  className="inputSearch" type="text" placeholder="Search Artist or a Track" onChange={this.handleChange} />
-                <button className="buttonSearch" onClick={ () => this.getTracks(this.state.artist)}> GO</button>
+                <input  className="inputSearch" type="text" placeholder="Search Artist or a Track" onChange={this.handleChange} style={{color: 'white',fontWeight: 600, borderRadius: 3, border: 'none'}}/>
+                <button className="buttonSearch" onClick={ () => this.getTracks(this.state.artist)}><p style={{color: 'white', fontWeight: 600,backgroundColor: '#DA2647',fontSize: 15}}>GO</p></button>
               </div>
 
               <div className="sort">
                 <div className="popularity">
-                  <button style={{height:30, fontSize: 14, fontWeight: 600, backgroundColor: 'white', width: '100%'}} onClick={() => this.sortPopularity()}>Sort By Popularity</button>
+                  <button style={{height:30, fontSize: 14, fontWeight: 600, backgroundColor: '#4F86F7', width: '100%'}} onClick={() => this.sortPopularity()}>Sort By Popularity</button>
                 </div>
                 <div className="duration">
-                  <button style={{height:30, fontSize: 14, fontWeight: 600, backgroundColor: 'white', width: '100%'}} onClick={() => this.sortDuration()}>Sort By Duration</button>
+                  <button style={{height:30, fontSize: 14, fontWeight: 600, backgroundColor: '#4F86F7', width: '100%'}} onClick={() => this.sortDuration()}>Sort By Duration</button>
                 </div>
               </div>
 

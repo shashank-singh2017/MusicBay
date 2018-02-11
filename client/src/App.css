@@ -2,7 +2,7 @@
   text-align: center;
   padding: 20px;
   height: 80px;
-  background-color: #31383C;
+  background-color: #2D383A;
 }
 
 .App-logo {
@@ -67,6 +67,7 @@ display: inline;
 body
 {
   background-color: #bdbdbd;
+  background-image: url('img1.jpg');
 }
 .leftPanel
 {
@@ -103,6 +104,7 @@ body
   height: 90%;
   font-size: 16px;
   padding-left: 10px;
+  background-color: #2E5894;
 }
 
 .buttonSearch
@@ -110,28 +112,32 @@ body
   width: 6.5%;
   height: 100%;
   margin-left: 1%;
+  border: none;
+  border-radius: 5px;
+  background-color: #DA2647;
 }
 
 .results
 {
   width: 99%;
-  height: 70px;
-  background-color: gray;
-  padding: 2px;
+  height: 80px;
+  background-color: #391285;
+  padding: 5px;
   border: 1px solid;
   border-color: black;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-left: 3%;
+  border-radius: 5px;
 
 }
 
 .image
 {
-  padding-top:3px;
+  padding-top:8px;
   float: left;
   display: inline;
   width: 70px;
-  padding-left: 3px;
+  padding-left: 10px;
 }
 
 .trackDesc
@@ -166,28 +172,29 @@ body
 {
   width: 79.8%;
   height: 30px;
-  background-color: red;
-  border: 1px solid;
-  border-color: black;
   margin-left: 10%;
-  display: inline-block;
   margin-top: 10px;
+  border-radius: 5px;
 }
 
 .duration
 {
   float: left;
-  display: inline-block;
-  background-color: white;
-  width: 25%;
+  border: none;
+  background-color: #4F86F7;
+  width: 49%;
   height: 30px;
+  border-radius: 5px;
+  margin-left: 2%;
 }
 
 .popularity
 {
   float: left;
-  display: inline-block;
-  background-color: white;
-  width: 25%;
+  border: none;
+  border-radius: 5px;
+  background-color: #4F86F7;
+  width: 49%;
   height: 30px;
+
 }
