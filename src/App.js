@@ -150,7 +150,7 @@ sortPopularity()
                         <div className="image col-sm-2">
                           <img src={track.album.images[2].url} />
                         </div>
-                        <div className="trackDesc">
+
                           <div className="col-sm-5">
                             <span>Title: {track.name}</span><br/>
                             <span> Type: {track.album.album_type}</span><br/>
@@ -162,7 +162,7 @@ sortPopularity()
                             <span> Artists: </span><br/>
                             <a href={track.external_urls.spotify}><button style={{height: 25}}>Open in Spotify</button></a>
                           </div>
-                        </div>
+                      
                     </div>
                   </div>
                   )
