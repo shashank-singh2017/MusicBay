@@ -107,13 +107,12 @@ sortPopularity()
 <div>
     <div className="col-sm-12">
 
-          <span className="col-sm-8">
-          <p>MusicBay - Zikher &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  One Stop Destination for Music Tracks</p>
-          </span>
-
-
-          <span className="col-sm-4" style={{float: 'right', marginRight: 20}}>
-          <a href="http://desolate-shelf-95963.herokuapp.com/"> <button type="button" className="btn btn-success">Log In to Spotify</button> </a>
+          <span className="logo">
+          <p>MusicBay - Zikher   One Stop Destination for Music Tracks
+            <span className="col-sm-4" style={{float: 'right', marginRight: 20}}>
+            <a href="http://desolate-shelf-95963.herokuapp.com/"> <button type="button" className="btn btn-success">Log In to Spotify</button> </a>
+            </span>
+          </p>
           </span>
 
     </div>
