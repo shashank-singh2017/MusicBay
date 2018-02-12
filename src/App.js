@@ -145,12 +145,12 @@ sortPopularity()
                 <br/>
                 {this.state.tracks.map((track) => {
                   return (
-                  <div className="row" style={{marginTop: 20, backgroundColor: "#391285" color: "white"}}>
+                  <div className="row" style={{marginTop: 20, backgroundColor: "#391285", color: "white"}}>
                     <div className="col-sm-10">
-                        <div className="image col-sm-2">
+                        <div className="image col-sm-2" style={{float: "left"}}>
                           <img src={track.album.images[2].url} />
                         </div>
-                        <div className="col-sm-10">
+                        <div className="col-sm-10" style={{float: "right"}}>
                           <div className="col-sm-5" style={{paddingLeft: 20, marginLeft: "3%", paddingTop: 10, color: "white"}}>
                             <span>Title: {track.name}</span><br/>
                             <span> Type: {track.album.album_type}</span><br/>
