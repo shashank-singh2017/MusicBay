@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import Spotify from 'spotify-web-api-js';
 
-import Button from 'react-bootstrap';
-
 const spotifyApi = new Spotify();
 
 const sortBy = require('sort-array');
@@ -115,7 +113,7 @@ sortPopularity()
 
 
           <span className="col-sm-4" style={{float: 'right', marginRight: 20}}>
-          <a href="http://desolate-shelf-95963.herokuapp.com/"> <Button bsStyle="success">Login to Spotify</Button> </a>
+          <a href="http://desolate-shelf-95963.herokuapp.com/"> <button type="button" className="btn btn-success">Log In to Spotify</button> </a>
           </span>
 
     </div>
