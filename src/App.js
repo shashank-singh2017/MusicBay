@@ -105,26 +105,34 @@ sortPopularity()
   render() {
     return (
 <div>
-    <div className="col-sm-12" style={{height: 80}}>
 
-          <span className="logo" style={{color: 'white', fontSize: 14}}>
-          <p>MusicBay - Zikher   One Stop Destination for Music Tracks</p>
-            <span className="login" style={{float: 'right', marginRight: 20}}>
-            <a href="http://desolate-shelf-95963.herokuapp.com/"> <button type="button" className="btn btn-success">Log In to Spotify</button> </a>
-            </span>
-          
+
+  <div className="header">
+
+          <div className="logo" style={{color: 'white', fontSize: 14, marginLeft: 20}}>
+              <p>MusicBay - Zikher</p>
+          </div>
+
+          <span className="login" style={{float: 'right', marginRight: 40}}>
+              <a href="http://desolate-shelf-95963.herokuapp.com/"> <button type="button" className="btn btn-success" style={{height: 28,fontSize:11}}>Log In to Spotify</button> </a>
           </span>
+  </div>
 
-    </div>
 <div className="mainBody">
 
-        <div className='col-sm-12' style={{height: 50}}>
-                <input  className="inputSearch col-sm-10" type="text" placeholder="Search Artist or a Track" onChange={this.handleChange} style={{color: 'white',fontWeight: 600, borderRadius: 3, border: 'none'}}/>
-                <button className="buttonSearch col-sm-2" onClick={ () => this.getTracks(this.state.artist)}><p style={{color: 'white', fontWeight: 600,backgroundColor: '#DA2647',fontSize: 15}}>GO</p></button>
-
+  <div className="row" style={{marginTop: 10,marginLeft: "5%"}}>
+      <div className="col-lg-10">
+        <div className="input-group">
+          <input type="text" className="form-control" placeholder="Search Artist or a Track" id="inputsearch" onChange={this.handleChange} style={{minHeight: 40}}/>
+          <span className="input-group-btn">
+            <button className="btn btn-default" type="button" id="buttonsearch" onClick={ () => this.getTracks(this.state.artist)} style={{minHeight: 40}}>Go!</button>
+          </span>
         </div>
+      </div>
+  </div>
 
-              <div className="col-sm-12">
+  <div className="row" style={{marginLeft: "6%", marginTop: 15}}>
+              <div className="col-sm-10">
                 <div className="col-sm-6">
                   <button style={{height:30, fontSize: 14, fontWeight: 600, backgroundColor: '#4F86F7', width: '100%'}} onClick={() => this.sortPopularity()}>Sort By Popularity</button>
                 </div>
@@ -132,10 +140,12 @@ sortPopularity()
                   <button style={{height:30, fontSize: 14, fontWeight: 600, backgroundColor: '#4F86F7', width: '100%'}} onClick={() => this.sortDuration()}>Sort By Duration</button>
                 </div>
               </div>
+  </div>
 
                 <br/>
                 {this.state.tracks.map((track) => {
                   return (
+                  <div className="row">
                     <div className="col-sm-10">
                         <div className="image col-sm-2">
                           <img src={track.album.images[2].url} />
@@ -154,6 +164,7 @@ sortPopularity()
                           </div>
                         </div>
                     </div>
+                  </div>
                   )
                 })
               }
