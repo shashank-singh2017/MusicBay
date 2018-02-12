@@ -145,19 +145,19 @@ sortPopularity()
                 <br/>
                 {this.state.tracks.map((track) => {
                   return (
-                  <div className="row" style={{marginTop: 20, backgroundColor: "#391285", color: "white",height: "auto", paddingBottom: 10, width: "90%", borderRadius: 5}}>
+                  <div className="row" style={{marginTop: 20, backgroundColor: "#391285", color: "white",height: "auto", paddingBottom: 10, width: "90%", borderRadius: 5,marginLeft: "7%"}}>
                     <div className="col-sm-10">
                         <div className="image col-sm-2" style={{float: "left"}}>
                           <img src={track.album.images[2].url} />
                         </div>
                         <div className="col-sm-10" style={{float: "right", marginRight: "5%"}}>
-                          <div className="col-sm-5" style={{paddingLeft: 20, marginLeft: "3%", paddingTop: 10, color: "white"}}>
+                          <div className="col-sm-5" style={{paddingLeft: 20, marginLeft: "3%", paddingTop: 10, color: "white", fontSize: 10}}>
                             <span>Title: {track.name}</span><br/>
                             <span> Type: {track.album.album_type}</span><br/>
                             <span> Duration: {Math.floor(track.duration_ms/60000)}:{Math.floor((track.duration_ms/1000)%60)} </span>
                           </div>
 
-                          <div className="col-sm-5" style={{paddingLeft: 20, marginLeft: "3%", paddingTop: 8, color: "white"}}>
+                          <div className="col-sm-5" style={{paddingLeft: 20, marginLeft: "3%", paddingTop: 8, color: "white", fontSize: 10}}>
                             <span>Popularity: {track.popularity}</span><br/>
                             <span> Artists: </span><br/>
                             <a href={track.external_urls.spotify}><button style={{height: 25, borderRadius: 4}}>Open in Spotify</button></a>
