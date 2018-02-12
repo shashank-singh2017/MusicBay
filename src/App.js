@@ -145,7 +145,7 @@ sortPopularity()
                 <br/>
                 {this.state.tracks.map((track) => {
                   return (
-                  <div className="row" style={{marginTop: 20, backgroundColor: "#391285", color: "white",height: "auto", paddingBottom: 10, width: "90%", borderRadius: 5,marginLeft: "7%"}}>
+                  <div className="row" style={{marginTop: 20, backgroundColor: "#391285", color: "white",height: "auto", paddingBottom: 10, width: "90%", borderRadius: 5,marginLeft: "6%"}}>
                     <div className="col-sm-10">
                         <div className="image col-sm-2" style={{float: "left"}}>
                           <img src={track.album.images[2].url} />
