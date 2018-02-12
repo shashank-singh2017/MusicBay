@@ -105,9 +105,9 @@ sortPopularity()
   render() {
     return (
 <div>
-    <div className="col-sm-12">
+    <div className="col-sm-12" style={{height: 80}}>
 
-          <span className="logo">
+          <span className="logo" style={{color: 'white', fontSize: 14}}>
           <p>MusicBay - Zikher   One Stop Destination for Music Tracks
             <span className="col-sm-4" style={{float: 'right', marginRight: 20}}>
             <a href="http://desolate-shelf-95963.herokuapp.com/"> <button type="button" className="btn btn-success">Log In to Spotify</button> </a>
