@@ -157,10 +157,10 @@ sortPopularity()
                             <span> Duration: {Math.floor(track.duration_ms/60000)}:{Math.floor((track.duration_ms/1000)%60)} </span>
                           </div>
 
-                          <div className="col-sm-5" style={{paddingLeft: 20, marginTop: 10, color: "white"}}>
+                          <div className="col-sm-5" style={{paddingLeft: 20, marginLeft: "3%", paddingTop: 8, color: "white"}}>
                             <span>Popularity: {track.popularity}</span><br/>
                             <span> Artists: </span><br/>
-                            <a href={track.external_urls.spotify}><button style={{height: 25}}>Open in Spotify</button></a>
+                            <a href={track.external_urls.spotify}><button style={{height: 25, borderRadius: 4}}>Open in Spotify</button></a>
                           </div>
                         </div>
                     </div>
