@@ -159,7 +159,7 @@ sortPopularity()
 
                           <div className="col-sm-5" style={{paddingLeft: 20, marginLeft: "3%", paddingTop: 8, color: "white", fontSize: 10}}>
                             <span>Popularity: {track.popularity}</span><br/>
-                            <span> Artists: </span><br/>
+                            <span> Artists: {track.album.artists[0].name}</span><br/>
                             <a href={track.external_urls.spotify}><button style={{height: 25, borderRadius: 4}}>Open in Spotify</button></a>
                           </div>
                         </div>
