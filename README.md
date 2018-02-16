@@ -8,3 +8,5 @@ Steps to Run the Application:
 5. You need to authorize against the Spotify so click on Login with Spotify button on top right hand side of the application.
 6. Once Authorized, you will be redirected to the application and then you can search for your favourite artist or track.
 7. click on the "open in spotify" button on result tracks to play it on spotify.
+
+The App is also hosted online for the live demo: https://cryptic-beach-67139.herokuapp.com/
